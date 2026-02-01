@@ -1,0 +1,13 @@
+@import "~@akwaba/graphene/src/index";
+@import "./mixins";
+@import "./variables";
+
+
+body {
+    //background: color(background);
+}
+
+ul,
+ol {
+    list-style: none;
+}
