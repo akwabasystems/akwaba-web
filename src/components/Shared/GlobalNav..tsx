@@ -2,6 +2,9 @@ import React from "react";
 import NavLinks from "./NavLinks";
 
 import type { NavLinkType } from "./NavLinks";
+import AkwabaIcon from "../../images/akwaba-logo.png";
+
+
 import "./global-nav.scss";
 
 export interface GlobalNavProps {
@@ -35,7 +38,7 @@ export default function GlobalNav(props: GlobalNavProps) {
                             <div className="column small-12 medium-2 logo-wrapper">
                                 <h2 className="nav-title">
                                     <a href="/">
-                                        <span className="localnav-title icon" />{title}
+                                        <img src={AkwabaIcon} alt="Akwaba" className="akwaba-logo" />
                                     </a>
                                 </h2>
                             </div>

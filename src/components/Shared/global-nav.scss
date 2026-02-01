@@ -4,14 +4,14 @@
 $bread-transition-function: cubic-bezier(0.52, 0.16, 0.52, 0.84);
 $bread-active-transition-function: cubic-bezier(0.04, 0.04, 0.12, 0.96);
 $nav-menu-width-medium: 320px;
-$nav-banner-height: 44px !default;
+$nav-banner-height: 60px !default;
 $bottom-border: #ddd;
 $preference-menu-height: 48px;
 
 
 @include typography-set(app-title, (small: (20, 44, 600)));
 
-@include typography-set(nav-links, (small: (15, 45, 500)));
+@include typography-set(nav-links, (small: (16, 60, 500)));
 
 @include typography-set(subnav-links, (small: (15, 15, 400)));
 
@@ -124,7 +124,7 @@ $preference-menu-height: 48px;
             transform: translateY(3px);
         }
 
-        @include viewport(large) {
+        @include viewport(medium) {
             display: none;
         }
     }
@@ -158,7 +158,7 @@ $preference-menu-height: 48px;
         text-align: center;
 
         @include viewport(large) {
-            text-align: left;
+            text-align: center;
             padding: 0;
         }
 
@@ -185,6 +185,12 @@ $preference-menu-height: 48px;
 
             &:hover {
                 text-decoration: none;
+            }
+
+            img {
+                height: 54px;
+                width: auto;
+                margin-top: 3px;
             }
         }
     }
@@ -243,7 +249,7 @@ $preference-menu-height: 48px;
                 display: block;
                 box-sizing: border-box;
                 -moz-box-sizing: border-box;
-                height: 50px;
+                height: 60px;
                 padding-left: 50px;
                 overflow: hidden;
                 outline: none;
@@ -260,7 +266,7 @@ $preference-menu-height: 48px;
                     top: 0;
                     left: 0;
                     width: 5px;
-                    height: 49px;
+                    height: 60px;
                     opacity: 0.65;
                     background: $bottom-border;
                 }
@@ -304,90 +310,6 @@ $preference-menu-height: 48px;
                 }
             }
         }
-
-        .user-info-wrapper {
-            position: relative;
-            z-index: 5;
-            margin: 0;
-        }
-
-        .user-info {
-            position: relative;
-            right: 0;
-            height: $nav-banner-height;
-            width: auto;
-            white-space: nowrap;
-            color: $gray;
-
-            a:hover {
-                color: $white;
-                text-decoration: none;
-            }
-
-            .name {
-                @include typography(compact-user-info);
-                height: 50px;
-                padding-left: 50px;
-                color: $gray;
-            }
-
-            .icon-chevrondown {
-                font-size: em(24px);
-            }
-        }
-
-        .user-preferences {
-            position: absolute;
-            top: 44px;
-            right: auto;
-            left: 26px;
-            border-radius: 4px;
-            padding: 8px 16px;
-            min-height: 20px;
-            width: auto;
-            margin-right: 0 !important;
-            background: $white;
-            box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.2);
-
-            li {
-                min-width: 180px;
-                padding: 0;
-                height: $preference-menu-height;
-                line-height: $preference-menu-height;
-                border-bottom: 1px solid $bottom-border;
-
-                &:last-child {
-                    border-bottom: none;
-                }
-
-                a {
-                    display: flex;
-                    @include typography(preferences);
-                    color: $black;
-                    height: $preference-menu-height;
-                    line-height: $preference-menu-height;
-                    text-align: left;
-                    padding-left: 4px;
-                    outline: none;
-
-                    &:hover {
-                        text-decoration: none;
-                    }
-
-                    .icon {
-                        width: 32px;
-                        height: 32px;
-                        margin-right: 8px;
-                        background-size: 30px;
-                        opacity: 0.65;
-                    }
-
-                    span:not(.icon) {
-                        flex: auto;
-                    }
-                }
-            }
-        }
     }
 
     .global-nav-menu-state:checked+& {
@@ -420,6 +342,8 @@ $preference-menu-height: 48px;
 
         .nav-menu {
             left: 0;
+            z-index: 500;
+            background-color: rgba(0, 0, 0, 0.6);
 
             .menu-item {
                 opacity: 1;
@@ -429,14 +353,6 @@ $preference-menu-height: 48px;
 }
 
 @include viewport(medium) {
-    .main-nav {
-        .nav-menu {
-            width: $nav-menu-width-medium;
-        }
-    }
-}
-
-@include viewport(large) {
     .main-nav {
         .nav-menu {
             position: relative;
@@ -453,7 +369,8 @@ $preference-menu-height: 48px;
                 line-height: $nav-banner-height;
 
                 .menu-item {
-                    margin-right: 45px;
+                    margin-right: 30px;
+                    margin-left: 30px;
                     padding: 0;
                     height: $nav-banner-height;
                     min-height: $nav-banner-height;
@@ -472,6 +389,7 @@ $preference-menu-height: 48px;
                         color: color(page);
                         cursor: pointer;
                         outline: none;
+                        border-bottom: none;
 
                         @include typography(nav-links);
 
@@ -495,7 +413,8 @@ $preference-menu-height: 48px;
                         }
 
                         &:hover:after,
-                        &.current:after {
+                        &.current:after,
+                        &.active:after {
                             display: block;
                         }
                     }
@@ -506,28 +425,6 @@ $preference-menu-height: 48px;
                         }
                     }
                 }
-            }
-
-            .user-info-wrapper {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 5;
-                margin: 0;
-                text-align: right;
-            }
-
-            .user-info {
-                padding-right: 20px;
-
-                .name {
-                    @include typography(user-info);
-                }
-            }
-
-            .user-preferences {
-                border-radius: 0;
             }
         }
     }
