@@ -1,0 +1,22 @@
+[
+    {
+        "id": "home",
+        "url": "/",
+        "title": "Home"
+    },
+    {
+        "id": "platform",
+        "url": "/platform/*",
+        "title": "Platform"
+    },
+    {
+        "id": "about",
+        "url": "/about",
+        "title": "About"
+    },
+    {
+        "id": "contact",
+        "url": "/contact",
+        "title": "Contact"
+    }
+]
