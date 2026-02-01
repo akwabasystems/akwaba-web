@@ -1,0 +1,100 @@
+@mixin ellipsis() {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin box-sizing-border() {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+@mixin hide-text {
+    text-indent: -10000px;
+}
+
+@mixin rounded-corner($radius: 4px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -khtml-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin rounded-side-corner($topLeft, $topRight, $bottomRight, $bottomLeft) {
+    -webkit-border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+    -moz-border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+    -ms-border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+    border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+}
+
+@mixin shadow($x, $y, $blur, $color) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin shadow-inset($x, $y, $blur, $color) {
+    -webkit-box-shadow: inset $x $y $blur $color;
+    -moz-box-shadow: inset $x $y $blur $color;
+    box-shadow: inset $x $y $blur $color;
+}
+
+@mixin shadow-dual($offset1, $offset2) {
+    -webkit-box-shadow: $offset1, $offset2;
+    -moz-box-shadow: $offset1, $offset2;
+    box-shadow: $offset1, $offset2;
+}
+
+@mixin shadow-none() {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+@mixin no-selection {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transition-dual($transition1, $transition2) {
+    -webkit-transition: $transition1, $transition2;
+    -moz-transition: $transition1, $transition2;
+    -o-transition: $transition1, $transition2;
+    transition: $transition1, $transition2;
+}
+
+@mixin gradient-horizontal($from: #555, $to: #333) {
+    background-image: -webkit-linear-gradient(left, $from, $to);
+    background-image: -moz-linear-gradient(left, $from, $to);
+    background-image: -o-linear-gradient(left, $from, $to);
+    background-image: linear-gradient(left, $from, $to);
+}
+
+@mixin gradient-vertical($from: #555, $to: #333) {
+    background-image: -webkit-linear-gradient(bottom, $from, $to);
+    background-image: -moz-linear-gradient(bottom, $from, $to);
+    background-image: -o-linear-gradient(bottom, $from, $to);
+    background-image: linear-gradient(bottom, $from, $to);
+}
+
+@mixin animation($animation) {
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    animation: $animation;
+}

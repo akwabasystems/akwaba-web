@@ -1,0 +1,74 @@
+diff --git a/node_modules/@akwaba/graphene/src/scss/core/_utils.scss b/node_modules/@akwaba/graphene/src/scss/core/_utils.scss
+index 62e030b..7be6e20 100644
+--- a/node_modules/@akwaba/graphene/src/scss/core/_utils.scss
++++ b/node_modules/@akwaba/graphene/src/scss/core/_utils.scss
+@@ -1,3 +1,5 @@
++@use "sass:list";
++
+ /** Generic border radius */
+ $generic-border-radius: 4px;
+ 
+@@ -29,6 +31,7 @@ $keywords: (
+  * Contains nested floating elements
+  */
+ @mixin self-clear() {
++
+     &::before,
+     &:after {
+         content: " ";
+@@ -104,7 +107,7 @@ $-focus-color: rgba(131, 192, 253, 0.5);
+  */
+ @mixin focus-shadow($value...) {
+     $focus-shadow: 0 0 0 $-focus-size $-focus-color;
+-    $has-value: not is-empty($value);
++    $has-value: list.length($value) > 0;
+ 
+     @if $has-value {
+         $focus-shadow: append($value, $focus-shadow, comma);
+@@ -116,7 +119,9 @@ $-focus-color: rgba(131, 192, 253, 0.5);
+     @include focus-mouse-selector() {
+         @if $has-value {
+             box-shadow: #{$value};
+-        } @else {
++        }
++
++        @else {
+             box-shadow: none;
+         }
+     }
+@@ -127,6 +132,7 @@ $-focus-color: rgba(131, 192, 253, 0.5);
+  * Selector for focus triggered by mouse or touch. Does not include input, text area, or select
+  */
+ @mixin focus-mouse-selector() {
++
+     &[data-focus-method="mouse"],
+     &[data-focus-method="touch"] {
+         &:not(input):not(textarea):not(select) {
+@@ -157,14 +163,16 @@ $-focus-color: rgba(131, 192, 253, 0.5);
+  * @param $parent-width     the width of the element's parent
+  */
+ @mixin center($width: false, $parent-width: false) {
+-	@if $width != false {
+-		width: $width;
+-	}
+-
+-	@if $width and $parent-width and $width > $parent-width {
+-		margin-left: -(($width - $parent-width) / 2);
+-	} @else {
+-		margin-left: auto;
+-		margin-right: auto;
+-	}
++    @if $width !=false {
++        width: $width;
++    }
++
++    @if $width and $parent-width and $width >$parent-width {
++        margin-left: -(($width - $parent-width) / 2);
++    }
++
++    @else {
++        margin-left: auto;
++        margin-right: auto;
++    }
+ }
+\ No newline at end of file
