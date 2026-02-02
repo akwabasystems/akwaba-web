@@ -1,0 +1,30 @@
+@include typography-set(hero-headline-standalone, (small: (56, 60, 700, -0.005), medium: (96, 100, 600, -0.015)));
+
+@include typography-set(section-copy, (small: (19, 23, 600, -0.012),
+        medium: (24, 28, 600, -0.009),
+        large: (28, 32, 600, -0.007)));
+
+@include typography-set(eyebrow-super, (small: (24, 28, 500, -0.009),
+        medium: (28, 32, 500, -0.007),
+        large: (32, 36, 500, -0.004)));
+
+@include typography-set(modal-trigger-button, (small: (17, 21, 600, -0.022),
+        large: (17, 25, 400, -0.022),
+    ));
+
+
+.typography-hero-headline-standalone {
+    @include typography(hero-headline-standalone);
+}
+
+.typography-section-copy {
+    @include typography(section-copy);
+}
+
+.typography-eyebrow-super {
+    @include typography(eyebrow-super);
+}
+
+.cta-container .button {
+    @include typography(modal-trigger-button);
+}

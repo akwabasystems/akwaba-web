@@ -3,6 +3,9 @@ import classnames from "classnames";
 import GlobalNav from "./GlobalNav.";
 import navlinks from "../../store/data/nav-links.json";
 
+
+import "../../styles/main.scss";
+
 export interface PageTemplateProps {
     title?: string;
     className?: string;
@@ -35,7 +38,6 @@ export default function PageTemplate(props: PageTemplateProps) {
                 links={navlinks}
             />
             <section className={classnames("page-wrapper", className)} ref={pageContainerRef}>
-                <div className="background-mask" />
                 <section className="main-content-container">
                     <section className="main-content">
                         {children}

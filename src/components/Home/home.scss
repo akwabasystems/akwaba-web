@@ -1,0 +1,27 @@
+.section-hero {
+    padding-top: 680px;
+    background: url("../../images/human-energy.jpg") top center no-repeat;
+
+    .section-title {
+        text-align: center;
+        margin: 0 30px;
+    }
+}
+
+.section-content {
+    margin: 40px 30px;
+}
+
+.cta-list-items {
+    margin: 40px 0 20px;
+    text-align: center;
+
+    .list-item {
+        display: inline-block;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

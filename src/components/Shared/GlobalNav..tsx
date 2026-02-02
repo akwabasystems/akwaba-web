@@ -15,7 +15,7 @@ export interface GlobalNavProps {
 
 
 export default function GlobalNav(props: GlobalNavProps) {
-    const { title, links } = props;
+    const { links } = props;
 
     return (
         <section className="global-nav-wrapper">
@@ -38,7 +38,7 @@ export default function GlobalNav(props: GlobalNavProps) {
                             <div className="column small-12 medium-2 logo-wrapper">
                                 <h2 className="nav-title">
                                     <a href="/">
-                                        <img src={AkwabaIcon} alt="Akwaba" className="akwaba-logo" />
+                                        <img src={AkwabaIcon} title="Akwaba" alt="Akwaba" className="akwaba-logo" />
                                     </a>
                                 </h2>
                             </div>
