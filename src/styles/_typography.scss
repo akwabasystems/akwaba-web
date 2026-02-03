@@ -1,0 +1,63 @@
+@include typography-set(hero-headline-standalone, (small: (64, 68, 600, -0.009), medium: (96, 100, 600, -0.015)));
+
+@include typography-set(headline-super, (small: (56, 60, 700, -0.005),
+        medium: (80, 84, 600, -0.015)));
+
+@include typography-set(headline-reduced, (small: (32, 36, 700, -0.004),
+        medium: (40, 44, 700, 0)));
+
+@include typography-set(section-copy, (small: (24, 28, 400, -0.009),
+        medium: (28, 32, 400, -0.007)));
+
+@include typography-set(section-highlight-copy, (small: (24, 28, 500, -0.009),
+        medium: (28, 32, 500, -0.007)));
+
+@include typography-set(eyebrow-super, (small: (24, 28, 500, -0.009),
+        medium: (28, 32, 500, -0.007),
+        large: (32, 36, 500, -0.004)));
+
+@include typography-set(modal-trigger-button, (small: (19, 23, 600, -0.012),
+        medium: (21, 25, 600, -0.011)));
+
+
+@include typography-set(typography-copyright, (small: (14, 18, 600, -0.016),
+        medium: (15, 21, 600, -0.022)));
+
+.typography-hero-headline-standalone {
+    @include typography(hero-headline-standalone);
+}
+
+.typography-headline-super {
+    @include typography(headline-super);
+}
+
+.typography-headline-reduced {
+    @include typography(headline-reduced);
+}
+
+.typography-headline-reduced+p,
+.typography-headline-reduced+ul,
+.typography-headline-reduced+.typography-body {
+    margin-top: 1em;
+}
+
+.typography-section-copy {
+    @include typography(section-copy);
+}
+
+.typography-section-highlight-copy {
+    @include typography(section-highlight-copy);
+}
+
+.typography-eyebrow-super {
+    @include typography(eyebrow-super);
+}
+
+.typography-copyright {
+    @include typography(typography-copyright);
+}
+
+.cta-container .button {
+    @include typography(modal-trigger-button);
+    margin: 12px 0;
+}

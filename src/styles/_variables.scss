@@ -9,6 +9,26 @@ $color-codes: (
     color-grey: #676767
 );
 
+$page-codes: (
+    home: #ec357a,
+    platform: #4d7bbd,
+    about: #ec7336,
+    contact: #58c9ed
+);
+
 $font-primary: "Helvetica Neue", Helvetica, "lucida grande", "lucida sans unicode", Arial, sans-serif;
 
 $transition-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+$black: #000;
+$white: #fff;
+$gray: #999;
+$medium-gray: #666;
+$light-gray: #777;
+$dark-gray : #333;
+$extra-light-gray: #e3e3e3;
+$muted-gray: #eee;
+$ice: #f8f8f8;
+$frost: #f2f2f2;
+$blue: #0070c9;
+$light-blue: #58c9ed;
