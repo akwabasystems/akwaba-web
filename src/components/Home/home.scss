@@ -1,3 +1,26 @@
+@import "../../styles/main";
+
+.section {
+    padding-bottom: 90px;
+
+    .section-title {
+        text-align: center;
+        margin: 0 30px;
+
+        @include viewport(medium) {
+            margin: 0 40px;
+        }
+    }
+
+    @include viewport(medium) {
+        padding-bottom: 100px;
+    }
+
+    @include viewport(large) {
+        padding-bottom: 140px;
+    }
+}
+
 .section-hero {
     padding-top: 680px;
     background: url("../../images/human-energy.jpg") top center no-repeat;
@@ -6,10 +29,34 @@
         text-align: center;
         margin: 0 30px;
     }
+
+    @include viewport(large) {
+        background: url("../../images/human-energy-1024.jpg") top right no-repeat;
+
+        .section-title {
+            width: 30%;
+            margin: -100px 0 0;
+            text-align: left;
+        }
+
+        .section-content {
+            width: 75%;
+            margin: 40px 40px 0 0;
+
+        }
+
+        .cta-list-items {
+            text-align: left;
+        }
+    }
 }
 
 .section-content {
-    margin: 40px 30px;
+    margin: 40px;
+
+    @include viewport(medium) {
+        margin: 40px 50px;
+    }
 }
 
 .cta-list-items {
@@ -23,5 +70,71 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+.chip-container {
+    padding-bottom: 20px;
+
+    .chip-headline {
+        margin: 40px 0;
+
+        &[data-text-gradient] {
+            margin-bottom: -5px;
+            padding-bottom: 5px;
+            color: #9d44fd;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: linear-gradient(45deg, #f2a624 0%, #f47027 60%);
+        }
+
+        &.platform-feature[data-text-gradient] {
+            color: #9d44fd;
+            background-image: linear-gradient(45deg, #ff9fe1 0%, #8727ff 40%);
+        }
+
+    }
+}
+
+.bullet-list-container {
+    margin: 30px 0;
+
+    @include viewport(medium) {
+        margin: 40px 0 30px;
+    }
+}
+
+.bullet-list-items {
+    position: relative;
+    margin: 0;
+
+    .bullet-list-item {
+        margin: 20px 0 30px;
+
+        p {
+            color: #a1a1a1;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+
+.section-contact .cta-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.section-platform .chip-subsection {
+    display: block;
+
+    @include viewport(large) {
+        display: flex;
+        justify-content: space-between;
+
     }
 }

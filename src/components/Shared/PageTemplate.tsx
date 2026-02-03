@@ -43,6 +43,7 @@ export default function PageTemplate(props: PageTemplateProps) {
                         {children}
                     </section>
                     <section className="footer">
+                        <p className="typography-copyright">{`© ${new Date().getFullYear()}  Akwaba Systems, Inc. All rights reserved.`}</p>
                     </section>
                 </section>
                 <aside className="contextual-panel-container" style={{ "display": "none" }}>

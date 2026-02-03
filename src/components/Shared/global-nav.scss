@@ -429,3 +429,10 @@ $preference-menu-height: 48px;
         }
     }
 }
+
+@include viewport(large) {
+    .main-nav {
+        width: 1262px;
+        margin: 0 auto;
+    }
+}
