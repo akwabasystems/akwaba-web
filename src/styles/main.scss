@@ -62,6 +62,10 @@ ol {
     }
 }
 
+.main-content {
+    position: relative;
+}
+
 .page-wrapper {
     display: block;
     margin-top: 40px;
@@ -71,4 +75,81 @@ ol {
     margin: 30px 0;
     text-align: center;
     color: #a1a1a1;
+}
+
+/** ------------- Tabbed views ------------- */
+
+.tabnav {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    right: 100px;
+    height: 48px;
+    @include typography(tab-text);
+    text-align: center;
+    z-index: 100;
+
+    .tabnav-items {
+        position: relative;
+        height: 48px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .tabnav-item {
+        display: inline-block;
+        margin-left: 100px;
+        list-style: none;
+        outline: none;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        .tabnav-link {
+            @include typography(tab-text);
+            padding: 0;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: left;
+            text-decoration: none;
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            position: relative;
+            z-index: 1;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background: transparent;
+            }
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &.active .tabnav-link {
+            color: #fff;
+
+            &:after {
+                background: #fff;
+            }
+        }
+    }
 }

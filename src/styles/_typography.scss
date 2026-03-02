@@ -19,9 +19,11 @@
 @include typography-set(modal-trigger-button, (small: (19, 23, 600, -0.012),
         medium: (21, 25, 600, -0.011)));
 
-
 @include typography-set(typography-copyright, (small: (14, 18, 600, -0.016),
         medium: (15, 21, 600, -0.022)));
+
+@include typography-set(tab-text, (small: (17, 17, 400),
+        medium: (19, 19, 400)));
 
 .typography-hero-headline-standalone {
     @include typography(hero-headline-standalone);
