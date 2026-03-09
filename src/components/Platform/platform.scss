@@ -9,8 +9,8 @@
         margin: 0 30px;
     }
 
-    /*@include viewport(large) {
-        background: url("../../images/human-energy-1024.jpg") top right no-repeat;
+    @include viewport(large) {
+        background: url("../../images/kawaii-robot-1024.jpg") top right no-repeat;
 
         .section-title {
             width: 30%;
@@ -21,13 +21,13 @@
         .section-content {
             width: 75%;
             margin: 40px 40px 0 0;
-
         }
 
         .cta-list-items {
-            text-align: left;
+            width: 66%;
+            text-align: center;
         }
-    }*/
+    }
 }
 
 .app-store-link {
@@ -37,4 +37,13 @@
     background: url("../../images/app-store-badge-medium.png") center center no-repeat;
     background-size: 203px 60px;
     text-indent: -9999px;
+
+    @include viewport(medium) {
+        width: 270px;
+        height: 80px;
+        margin-top: 12px;
+        background-image: url("../../images/app-store-badge.png");
+        background-size: 270px 80px;
+
+    }
 }
