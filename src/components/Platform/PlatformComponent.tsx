@@ -14,6 +14,7 @@ import AVSComponemt from './views/AVSComponent';
 import NoPlatformFound from './views/NoPlatformFound';
 import PageTemplate from "../Shared/PageTemplate";
 
+import './platform.scss';
 
 export default function PlatformComponent() {
     const location = useLocation();

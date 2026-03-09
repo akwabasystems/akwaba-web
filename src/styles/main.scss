@@ -80,12 +80,12 @@ ol {
 /** ------------- Tabbed views ------------- */
 
 .tabnav {
-    width: 100%;
     position: absolute;
     top: 40px;
-    left: 100px;
-    right: 100px;
+    left: 10%;
+    right: 10%;
     height: 48px;
+
     @include typography(tab-text);
     text-align: center;
     z-index: 100;
@@ -146,10 +146,90 @@ ol {
 
         &.active .tabnav-link {
             color: #fff;
+            font-weight: 500;
 
             &:after {
                 background: #fff;
             }
         }
     }
+}
+
+/* ------------- Sections ------------- */
+.section-content {
+    margin: 40px;
+
+    @include viewport(medium) {
+        margin: 40px 50px;
+    }
+}
+
+.cta-list-items {
+    margin: 40px 0 20px;
+    text-align: center;
+
+    .list-item {
+        display: inline-block;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.chip-container {
+    padding-bottom: 20px;
+
+    .chip-headline {
+        margin: 40px 0;
+
+        &[data-text-gradient] {
+            margin-bottom: -5px;
+            padding-bottom: 5px;
+            color: #9d44fd;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: linear-gradient(45deg, #f2a624 0%, #f47027 60%);
+        }
+
+        &.platform-feature[data-text-gradient] {
+            color: #9d44fd;
+            background-image: linear-gradient(45deg, #ff9fe1 0%, #8727ff 40%);
+        }
+
+    }
+}
+
+.bullet-list-container {
+    margin: 30px 0;
+
+    @include viewport(medium) {
+        margin: 40px 0 30px;
+    }
+}
+
+.bullet-list-items {
+    position: relative;
+    margin: 0;
+
+    .bullet-list-item {
+        margin: 20px 0 30px;
+
+        p {
+            color: #a1a1a1;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+
+.section-contact .cta-container {
+    margin: 30px 0;
+    text-align: center;
 }

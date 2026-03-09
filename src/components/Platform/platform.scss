@@ -1,1 +1,40 @@
 @import "../../styles/main";
+
+.section-kawaii-hero {
+    padding-top: 720px;
+    background: url("../../images/kawaii-robot.jpg") top center no-repeat;
+
+    .section-title {
+        text-align: center;
+        margin: 0 30px;
+    }
+
+    /*@include viewport(large) {
+        background: url("../../images/human-energy-1024.jpg") top right no-repeat;
+
+        .section-title {
+            width: 30%;
+            margin: -100px 0 0;
+            text-align: left;
+        }
+
+        .section-content {
+            width: 75%;
+            margin: 40px 40px 0 0;
+
+        }
+
+        .cta-list-items {
+            text-align: left;
+        }
+    }*/
+}
+
+.app-store-link {
+    display: inline-block;
+    width: 203px;
+    height: 60px;
+    background: url("../../images/app-store-badge-medium.png") center center no-repeat;
+    background-size: 203px 60px;
+    text-indent: -9999px;
+}

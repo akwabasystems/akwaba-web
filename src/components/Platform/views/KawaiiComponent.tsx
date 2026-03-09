@@ -7,12 +7,128 @@ export default function KawaiiComponent() {
         <>
             <section className="section section-kawaii-hero">
                 <h1 className="section-title typography-hero-headline-standalone">
-                    Kawaii AI
+                    Create without limits.
                 </h1>
                 <div className="section-content">
-
+                    <p className="typography-eyebrow-super hero-copy large-10 medium-12">
+                        Kawaii AI transforms simple prompts into expressive, portfolio-worthy images—built for creators, designers, and the curious.
+                    </p>
+                    <p className="typography-eyebrow-super hero-copy large-10 medium-12">
+                        From anime portraits to abstract dreamscapes, Kawaii AI blends curated styles with powerful generation to help you explore ideas faster—and beautifully.
+                    </p>
+                    <ul className="cta-list-items list-nobullet typography-hero-cta">
+                        <li className="list-item cta-container explore-platform">
+                            <a href="https://apps.apple.com/us/app/kawaii-ai/id6661018939" target="_blank" aria-label="Explore Kawaii AI" className="app-store-link">
+                                Explore on the App Store
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section >
+
+            <section className="section section-what-makes-kawaii-different">
+                <h2 className="section-title typography-headline-super platform-headline">What Makes Kawaii AI Different</h2>
+                <div className="section-content">
+                    <p className="typography-eyebrow-super large-10 medium-12">
+                        More than image generation.
+                    </p>
+
+                    <div className="chip-container">
+                        <h3 className="chip-headline typography-headline-reduced platform-feature" data-text-gradient>Curated Styles</h3>
+                        <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                            Carefully crafted visual categories—from Anime to Chiaroscuro—so you don&apos;t start from chaos.
+                        </p>
+                    </div>
+
+                    <div className="chip-container">
+                        <h3 className="chip-headline typography-headline-reduced platform-feature" data-text-gradient>Fast Iteration</h3>
+                        <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                            Generate, remix, refine. Creative momentum should never stall.
+                        </p>
+                    </div>
+
+                    <div className="chip-container">
+                        <h3 className="chip-headline typography-headline-reduced platform-feature" data-text-gradient>Built for Remix</h3>
+                        <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                            Discover prompts, adapt ideas, and evolve images into something uniquely yours.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section className="section section-visual-showcase">
+                <h2 className="section-title typography-headline-super platform-headline">Visual Showcase</h2>
+                <div className="section-content">
+                    <p className="typography-eyebrow-super large-10 medium-12">
+                        See what&apos;s possible.
+                    </p>
+
+                </div>
+            </section>
+
+            <section className="section section-creative-confidence">
+                <h2 className="section-title typography-headline-super platform-headline">Designed for Creative Confidence</h2>
+                <div className="section-content">
+                    <p className="typography-eyebrow-super large-10 medium-12">
+                        Creative power, simplified.
+                    </p>
+                    <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                        AI tools shouldn&apos;t feel overwhelming. Kawaii AI is designed to help you move from idea to output with clarity. No complex controls. No endless parameter tuning. Just clear prompts and beautiful results.
+                    </p>
+                    <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                        Express your creativity with confidence, and let Kawaii AI handle the rest.
+                    </p>
+                    <div className="bullet-list-container">
+                        <ul className="bullet-list-items">
+                            <li className="bullet-list-item">
+                                <p className="typography-section-highlight-copy">
+                                    <span className="highlight">Short, readable prompts</span>. Focus on concepts, not syntax.
+                                </p>
+                            </li>
+                            <li className="bullet-list-item">
+                                <p className="typography-section-highlight-copy">
+                                    <span className="highlight">Confidence-building output.</span> Start with strong, inspiring results that encourage exploration, not confusion.
+                                </p>
+                            </li>
+                            <li className="bullet-list-item">
+                                <p className="typography-section-highlight-copy">
+                                    <span className="highlight">Visual clarity first.</span> Prioritize clean, compelling images over technical complexity.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section className="section section-from-play-to-portfolio">
+                <h2 className="section-title typography-headline-super platform-headline">From Play to Portfolio</h2>
+                <div className="section-content">
+                    <p className="typography-eyebrow-super large-10 medium-12">
+                        From playful experiments to polished results.
+                    </p>
+
+                    <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                        Whether you&apos;re exploring concepts, building references, or creating social content, Kawaii helps you move quickly—from inspiration to impact.
+                    </p>
+
+                </div>
+            </section>
+
+            <section className="section section-contact">
+                <h2 className="section-title typography-headline-super platform-headline">Ready to Create?</h2>
+                <div className="section-content">
+                    <p className="typography-eyebrow-super hero-copy large-10 medium-12">
+                        Are you ready to explore the creative possibilities of Kawaii AI? Download it now on the App Store and start generating your own unique images.
+                    </p>
+                    <div className="cta-container">
+                        <a href="https://apps.apple.com/us/app/kawaii-ai/id6661018939" target="_blank" aria-label="Explore Kawaii AI" className="app-store-link">
+                            Explore on the App Store
+                        </a>
+                    </div>
+                </div>
+            </section>
         </>
     );
 
