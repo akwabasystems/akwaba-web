@@ -151,9 +151,9 @@ export default function ImageCarousel(props: ImageCarouselProps) {
                     }}
                 >
                     {items.map((item) => (
-                        <figure className="akwaba-careousel__slide" key={item.id}>
+                        <figure className="akwaba-carousel__slide" key={item.id}>
                             <img
-                                className="akwaba-careousel__image"
+                                className="akwaba-carousel__image"
                                 src={item.src}
                                 alt={item.alt}
                                 loading='lazy'
@@ -191,7 +191,7 @@ export default function ImageCarousel(props: ImageCarouselProps) {
             </div>
 
             {showDots && hasnMultipleItems && (
-                <div className="akwaba-carousel__dots" role="tabliust" aria-label="Slide Navigation">
+                <div className="akwaba-carousel__dots" role="tablist" aria-label="Slide Navigation">
                     {items.map((item, index) => (
                         <button
                             key={item.id}

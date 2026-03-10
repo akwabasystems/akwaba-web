@@ -4,13 +4,37 @@
     padding-top: 720px;
     background: url("../../images/kawaii-robot.jpg") top center no-repeat;
 
+    .kawaii-icon {
+        text-align: center;
+        margin: 0 0 20px;
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+        }
+    }
+
     .section-title {
         text-align: center;
         margin: 0 30px;
     }
 
     @include viewport(large) {
+        padding-top: 540px;
         background: url("../../images/kawaii-robot-1024.jpg") top right no-repeat;
+
+        .kawaii-icon {
+            width: 75%;
+            text-align: left;
+            padding-left: 70px;
+            padding: 0 0 120px 70px;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
 
         .section-title {
             width: 30%;
@@ -46,4 +70,8 @@
         background-size: 270px 80px;
 
     }
+}
+
+.carousel-container {
+    margin: 30px 0 20px;
 }

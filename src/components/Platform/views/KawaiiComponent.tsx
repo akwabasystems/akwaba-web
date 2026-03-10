@@ -1,11 +1,19 @@
 import React from "react";
 
+import ImageCarousel from "@/components/UI/ImageCarousel";
+import { carouselImages } from "./carouselImages";
+
+import kawaiiIcon from "../../../images/kawai-icon-180.png";
+
 
 export default function KawaiiComponent() {
 
     return (
         <>
             <section className="section section-kawaii-hero">
+                <figure className="kawaii-icon">
+                    <img src={kawaiiIcon} alt="Kawaii AI" className="kawaii-hero-icon" />
+                </figure>
                 <h1 className="section-title typography-hero-headline-standalone">
                     Create without limits.
                 </h1>
@@ -63,7 +71,15 @@ export default function KawaiiComponent() {
                     <p className="typography-eyebrow-super large-10 medium-12">
                         See what&apos;s possible.
                     </p>
-
+                    <div className="carousel-container">
+                        <ImageCarousel
+                            items={carouselImages}
+                            title="Kawaii AI visual showcase"
+                            autoPlay={false}
+                            showDots={true}
+                            showArrows={true}
+                        />
+                    </div>
                 </div>
             </section>
 
