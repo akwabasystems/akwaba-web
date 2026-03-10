@@ -4,6 +4,7 @@ import ImageCarousel from "@/components/UI/ImageCarousel";
 import { carouselImages } from "./carouselImages";
 
 import kawaiiIcon from "../../../images/kawai-icon-180.png";
+import beesAtWork from "../../../images/bees-at-work.jpg";
 
 
 export default function KawaiiComponent() {
@@ -128,7 +129,9 @@ export default function KawaiiComponent() {
                     <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
                         Whether you&apos;re exploring concepts, building references, or creating social content, Kawaii helps you move quickly—from inspiration to impact.
                     </p>
-
+                    <figure className="splash-image">
+                        <img src={beesAtWork} alt="Bees at work" />
+                    </figure>
                 </div>
             </section>
 

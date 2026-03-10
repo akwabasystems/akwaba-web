@@ -172,7 +172,7 @@ export default function ImageCarousel(props: ImageCarouselProps) {
                     <>
                         <button
                             type="button"
-                            className="akwaba-carousel_arrow akwaba-carousel__arrow--left"
+                            className="akwaba-carousel__arrow akwaba-carousel__arrow--left"
                             aria-label="Previous Slide"
                             onClick={gotoPrevImage}
                         >
@@ -180,7 +180,7 @@ export default function ImageCarousel(props: ImageCarouselProps) {
                         </button>
                         <button
                             type="button"
-                            className="akwaba-carousel_arrow akwaba-carousel__arrow--right"
+                            className="akwaba-carousel__arrow akwaba-carousel__arrow--right"
                             aria-label="Next Slide"
                             onClick={gotoNextImage}
                         >

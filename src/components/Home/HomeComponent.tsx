@@ -48,7 +48,7 @@ export default function HomePage(props: any) {
                                 Create standout AI art with curated styles and simple prompts.
                             </p>
                             <div className="cta-container">
-                                <a href="/platform/*" aria-label="Explore the Platform" role="button" className="button button-elevated button-neutral">
+                                <a href="/platform/kawaii" aria-label="Explore the Platform" role="button" className="button button-elevated button-neutral">
                                     Explore Kawaii AI
                                 </a>
                             </div>

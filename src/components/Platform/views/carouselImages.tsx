@@ -7,6 +7,9 @@ import image4 from "../../../images/image-carousel/carousel-image-4.jpg";
 import image5 from "../../../images/image-carousel/carousel-image-5.jpg";
 import image6 from "../../../images/image-carousel/carousel-image-6.jpg";
 import image7 from "../../../images/image-carousel/carousel-image-7.jpg";
+import image8 from "../../../images/image-carousel/carousel-image-8.jpg";
+import image9 from "../../../images/image-carousel/carousel-image-9.jpg";
+import image10 from "../../../images/image-carousel/carousel-image-10.jpg";
 
 export const carouselImages: CarouselItemType[] = [
     {
@@ -30,7 +33,7 @@ export const carouselImages: CarouselItemType[] = [
     {
         id: 'kawaii-showcase-4',
         src: image4,
-        alt: 'High-quality images. Everytime.',
+        alt: 'High-quality images. Every time.',
         caption: 'High-quality images. Every time.',
     },
     {
@@ -50,5 +53,23 @@ export const carouselImages: CarouselItemType[] = [
         src: image7,
         alt: 'Realistic or stylized. You choose.',
         caption: 'Realistic or stylized. You choose.',
+    },
+    {
+        id: 'kawaii-showcase-8',
+        src: image8,
+        alt: 'Abstract art with a touch of creativity.',
+        caption: 'Abstract art with a touch of creativity.',
+    },
+    {
+        id: 'kawaii-showcase-7',
+        src: image9,
+        alt: 'Dreamy landscapes that spark the imagination.',
+        caption: 'Dreamy landscapes that spark the imagination.',
+    },
+    {
+        id: 'kawaii-showcase-7',
+        src: image10,
+        alt: 'Nature-inspired art that captures the beauty of the world.',
+        caption: 'Nature-inspired art that captures the beauty of the world.',
     }
 ];
