@@ -38,7 +38,7 @@ export default function GlobalNav(props: GlobalNavProps) {
                             <div className="column small-12 medium-2 logo-wrapper">
                                 <h2 className="nav-title">
                                     <a href="/">
-                                        <img src={AkwabaIcon} title="Akwaba" alt="Akwaba" className="akwaba-logo" />
+                                        <img src={AkwabaIcon} title="Akwaba Systems" alt="Akwaba Systems" className="akwaba-logo" />
                                     </a>
                                 </h2>
                             </div>
