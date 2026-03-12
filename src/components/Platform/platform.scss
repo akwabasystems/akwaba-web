@@ -95,3 +95,65 @@
         }
     }
 }
+
+.section-avs-hero {
+    padding-top: 860px;
+    background: url("../../images/avs-hero.jpg") top center no-repeat;
+
+    .section-title {
+        text-align: center;
+        margin: 0 30px;
+    }
+
+    @include viewport(large) {
+        padding-top: 860px;
+        background: url("../../images/avs-hero-1024.jpg") top right no-repeat;
+
+        .section-title {
+            width: 30%;
+            margin: -100px 0 0;
+            text-align: left;
+        }
+
+        .section-content {
+            width: 75%;
+            margin: 40px 40px 0 0;
+        }
+    }
+}
+
+.section-gradient-bg {
+    margin-top: -10px;
+    padding-top: 720px;
+    background-position: 50% -20%;
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+}
+
+.section-what-makes-avs-different {
+    padding-top: 680px;
+    background-image: url("../../images/subsection-1-hero.jpg");
+}
+
+.section-our-curriculum {
+    background-image: url("../../images/subsection-2-hero.jpg");
+}
+
+.section-classroom-of-the-future {
+    background-image: url("../../images/subsection-3-hero.jpg");
+}
+
+.section-built-for-curious-kids {
+    padding-top: 840px;
+    background-image: url("../../images/subsection-4-hero.jpg");
+}
+
+.section-from-curiosity-to-capability {
+    background-position: 50% -30%;
+    background-image: url("../../images/subsection-5-hero.jpg");
+}
+
+.section-ready-to-explore {
+    padding-top: 860px;
+    background-image: url("../../images/subsection-6-hero.jpg");
+}
