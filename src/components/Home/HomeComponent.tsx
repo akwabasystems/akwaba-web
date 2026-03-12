@@ -14,7 +14,7 @@ export default function HomePage(props: any) {
                     Build creative, intelligent experiences.
                 </h1>
                 <div className="section-content">
-                    <p className="typography-eyebrow-super hero-copy large-10 medium-12">
+                    <p className="typography-eyebrow-super hero-copy">
                         Akwaba is a platform for creative AI products, future-ready learning, and
                         practical AI solutions—built to help people create, learn, and build with
                         confidence.
@@ -37,14 +37,14 @@ export default function HomePage(props: any) {
             <section className="section section-platform">
                 <h2 className="section-title typography-headline-super platform-headline">One platform.<br />Two lanes.</h2>
                 <div className="section-content">
-                    <p className="typography-eyebrow-super large-10 medium-12">
+                    <p className="typography-eyebrow-super">
                         Akwaba brings together products and initiatives that share the same foundation: creativity,
                         learning, and applied intelligence.
                     </p>
                     <div className="chip-subsection">
                         <div className="chip-container">
                             <h3 className="chip-headline typography-headline-reduced kawaii" data-text-gradient>Kawaii AI</h3>
-                            <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                            <p className="typography-section-copy hero-copy">
                                 Create standout AI art with curated styles and simple prompts.
                             </p>
                             <div className="cta-container">
@@ -55,7 +55,7 @@ export default function HomePage(props: any) {
                         </div>
                         <div className="chip-container">
                             <h3 className="chip-headline typography-headline-reduced avs" data-text-gradient>Akwaba Virtual School</h3>
-                            <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                            <p className="typography-section-copy hero-copy">
                                 Project-based learning built for modern skills—AI, creativity, and tech.
                             </p>
                             <div className="cta-container">
@@ -72,11 +72,11 @@ export default function HomePage(props: any) {
             <section className="section section-technology">
                 <h2 className="section-title typography-headline-super platform-headline">Technology should feel empowering.</h2>
                 <div className="section-content">
-                    <p className="typography-eyebrow-super large-10 medium-12">
+                    <p className="typography-eyebrow-super">
                         Akwaba is built on a simple idea: the best tools don&apos;t just “work”&mdash;they help people
                         move faster, think clearer, and create better. We build with taste, structure, and long-term craft.
                     </p>
-                    <p className="typography-eyebrow-super large-10 medium-12">
+                    <p className="typography-eyebrow-super">
                         We believe in the following principles when it comes to building technology that empowers people:
                     </p>
                     <div className="bullet-list-container">
@@ -109,27 +109,27 @@ export default function HomePage(props: any) {
             <section className="section section-why-akwaba">
                 <h2 className="section-title typography-headline-super platform-headline">Why Akwaba</h2>
                 <div className="section-content">
-                    <p className="typography-eyebrow-super large-10 medium-12">
+                    <p className="typography-eyebrow-super">
                         From creativity to capability.
                     </p>
 
                     <div className="chip-container">
                         <h3 className="chip-headline typography-headline-reduced platform-feature" data-text-gradient>Create</h3>
-                        <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                        <p className="typography-section-copy hero-copy">
                             Generate, remix, and explore new styles with tools like Kawaii AI.
                         </p>
                     </div>
 
                     <div className="chip-container">
                         <h3 className="chip-headline typography-headline-reduced platform-feature" data-text-gradient>Learn</h3>
-                        <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                        <p className="typography-section-copy hero-copy">
                             Build modern skills through structured, project-based learning with Akwaba Virtual School.
                         </p>
                     </div>
 
                     <div className="chip-container">
                         <h3 className="chip-headline typography-headline-reduced platform-feature" data-text-gradient>Build</h3>
-                        <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
+                        <p className="typography-section-copy hero-copy">
                             Ship practical AI solutions and automation through Coregenix AI.
                         </p>
                     </div>
@@ -140,7 +140,7 @@ export default function HomePage(props: any) {
             <section className="section section-pipeline">
                 <h2 className="section-title typography-headline-super platform-headline">What we&apos;re building right now</h2>
                 <div className="section-content">
-                    <p className="typography-eyebrow-super large-10 medium-12">
+                    <p className="typography-eyebrow-super">
                         Kawaii AI is live and evolving. Akwaba Virtual School is being built in phases. Coregenix AI delivers practical AI work now.
                     </p>
                 </div>
@@ -149,8 +149,8 @@ export default function HomePage(props: any) {
             <section className="section section-contact">
                 <h2 className="section-title typography-headline-super platform-headline">Want to collaborate?</h2>
                 <div className="section-content">
-                    <p className="typography-eyebrow-super hero-copy large-10 medium-12">
-                        Whether you’re a creator, a learner, or a team looking to build something intelligent&mdash;Akwaba is open to partners,
+                    <p className="typography-eyebrow-super hero-copy">
+                        Whether you&apos;re a creator, a learner, or a team looking to build something intelligent&mdash;Akwaba is open to partners,
                         early adopters, and bold projects.
                     </p>
                     <div className="cta-container">
