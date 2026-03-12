@@ -9,8 +9,8 @@
 @include typography-set(section-copy, (small: (24, 28, 400, -0.009),
         medium: (28, 32, 400, -0.007)));
 
-@include typography-set(section-highlight-copy, (small: (24, 28, 500, -0.009),
-        medium: (28, 32, 500, -0.007)));
+@include typography-set(section-highlight-copy, (small: (24, 28, 400, -0.009),
+        medium: (28, 32, 400, -0.007)));
 
 @include typography-set(eyebrow-super, (small: (24, 28, 500, -0.009),
         medium: (28, 32, 500, -0.007),
@@ -62,4 +62,10 @@
 .cta-container .button {
     @include typography(modal-trigger-button);
     margin: 12px 0;
+}
+
+.typography-headline-reduced+p,
+.typography-headline-reduced+ul,
+.typography-headline-reduced+.typography-body {
+    margin-right: 1em;
 }
