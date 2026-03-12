@@ -1,0 +1,53 @@
+@import "../../styles/main";
+
+
+.section-about-hero {
+    padding-top: 760px;
+    background: url("../../images/akwaba-hero.jpg") center -10% no-repeat;
+    background-size: 700px auto;
+
+    .section-title {
+        text-align: center;
+        margin: 0 30px;
+    }
+
+    @include viewport(large) {
+        padding-top: 360px;
+        background: url("../../images/akwaba-hero-1024.jpg") top right no-repeat;
+        background-size: 768px auto;
+
+        .section-title {
+            width: 30%;
+            margin: -100px 0 0;
+            text-align: left;
+        }
+
+        .section-content {
+            width: 75%;
+            margin: 40px 40px 0 0;
+        }
+    }
+}
+
+.section-what-were-building {
+    .cta-container {
+        margin-top: 20px;
+    }
+}
+
+.section {
+
+    .bullet-list-items .bullet-list-item p {
+        font-weight: 400;
+    }
+
+    a.founder-link {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px dashed rgba(255,255,255,0.85);
+    }
+
+    a.founder-link:hover {
+        border-bottom: 1px solid rgba(255,255,255,1.0);
+    }
+}
