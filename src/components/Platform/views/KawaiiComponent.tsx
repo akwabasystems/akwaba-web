@@ -126,7 +126,7 @@ export default function KawaiiComponent() {
                     </p>
 
                     <p className="typography-section-copy hero-copy">
-                        Whether you&apos;re exploring concepts, building references, or creating social content, Kawaii helps you move quickly—from inspiration to impact.
+                        Whether you&apos;re exploring concepts, building references, or creating social content, Kawaii AI helps you move quickly—from inspiration to impact.
                     </p>
                     <figure className="splash-image">
                         <img src={beesAtWork} alt="Bees at work" />

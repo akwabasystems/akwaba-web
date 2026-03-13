@@ -141,7 +141,7 @@ export default function HomePage(props: any) {
                 <h2 className="section-title typography-headline-super platform-headline">What we&apos;re building right now</h2>
                 <div className="section-content">
                     <p className="typography-eyebrow-super">
-                        Kawaii AI is live and evolving. Akwaba Virtual School is being built in phases. Coregenix AI delivers practical AI work now.
+                        Kawaii AI is live and evolving. Akwaba Virtual School is being built in phases. Coregenix AI is coming soon.
                     </p>
                 </div>
             </section>
@@ -153,7 +153,7 @@ export default function HomePage(props: any) {
                         Whether you&apos;re a creator, a learner, or a team looking to build something intelligent&mdash;Akwaba is open to partners,
                         early adopters, and bold projects.
                     </p>
-                    <div className="cta-container">
+                    <div className="cta-container contact-cta">
                         <a href="/contact" aria-label="Contact Us" role="button" className="button button-elevated button-neutral">
                             Contact Us
                         </a>

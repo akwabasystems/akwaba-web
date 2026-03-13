@@ -56,7 +56,7 @@ export default function AboutPage(props: any) {
                             <h3 className="chip-headline typography-headline-reduced kawaii" data-text-gradient>Kawaii AI</h3>
                             <p className="typography-section-copy hero-copy">
                                 A creative AI tool designed to help anyone generate expressive images from simple prompts.
-                                With curated styles and fast iteration, Kawaii turns ideas into visuals in seconds.
+                                With curated styles and fast iteration, Kawaii AI turns ideas into visuals in seconds.
                             </p>
                             <div className="cta-container">
                                 <a href="/platform/kawaii" aria-label="Explore Kawaii AI" role="button" className="button button-elevated button-neutral">
