@@ -167,7 +167,7 @@ $preference-menu-height: 48px;
             display: inline-block;
             width: auto;
             outline: none;
-            top: -1px;
+            top: 2px;
 
             @include typography(app-title);
 

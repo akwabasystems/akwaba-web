@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import PageTemplate from "../Shared/PageTemplate";
 
@@ -21,14 +22,24 @@ export default function HomePage(props: any) {
                     </p>
                     <ul className="cta-list-items list-nobullet typography-hero-cta">
                         <li className="list-item cta-container explore-platform">
-                            <a href="/platform/kawaii" aria-label="Explore the Platform" role="button" className="button button-elevated button-neutral">
-                                Explore the Platform
-                            </a>
+                            <NavLink
+                                id="hero-explore-platform-kawaii"
+                                to="/platform/kawaii"
+                            >
+                                <button aria-label="Explore the Platform" role="button" className="button button-elevated button-neutral">
+                                    Explore the Platform
+                                </button>
+                            </NavLink>
                         </li>
                         <li className="list-item cta-container contact-us">
-                            <a href="/contact" aria-label="Contact Us" role="button" className="button button-elevated button-neutral">
-                                Contact Us
-                            </a>
+                            <NavLink
+                                id="hero-contact-us"
+                                to="/contact"
+                            >
+                                <button aria-label="Contact Us" className="button button-elevated button-neutral">
+                                    Contact Us
+                                </button>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
@@ -48,9 +59,14 @@ export default function HomePage(props: any) {
                                 Create standout AI art with curated styles and simple prompts.
                             </p>
                             <div className="cta-container">
-                                <a href="/platform/kawaii" aria-label="Explore Kawaii AI" role="button" className="button button-elevated button-neutral">
-                                    Explore Kawaii AI
-                                </a>
+                                <NavLink
+                                    id="platform-explore-platform-kawaii"
+                                    to="/platform/kawaii"
+                                >
+                                    <button aria-label="Explore Kawaii AI" className="button button-elevated button-neutral">
+                                        Explore Kawaii AI
+                                    </button>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="chip-container">
@@ -59,9 +75,14 @@ export default function HomePage(props: any) {
                                 Project-based learning built for modern skills—AI, creativity, and tech.
                             </p>
                             <div className="cta-container">
-                                <a href="/platform/akwaba-virtual-school" aria-label="Explore Akwaba Virtual School" role="button" className="button button-elevated button-neutral">
-                                    Explore Akwaba Virtual School
-                                </a>
+                                <NavLink
+                                    id="platform-explore-platform-kawaii"
+                                    to="/platform/akwaba-virtual-school"
+                                >
+                                    <button aria-label="Explore Akwaba Virtual School" className="button button-elevated button-neutral">
+                                        Explore Akwaba Virtual School
+                                    </button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
@@ -154,9 +175,14 @@ export default function HomePage(props: any) {
                         early adopters, and bold projects.
                     </p>
                     <div className="cta-container contact-cta">
-                        <a href="/contact" aria-label="Contact Us" role="button" className="button button-elevated button-neutral">
-                            Contact Us
-                        </a>
+                        <NavLink
+                            id="contact-contact-us"
+                            to="/contact"
+                        >
+                            <button aria-label="Contact Us" className="button button-elevated button-neutral">
+                                Contact Us
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
             </section>

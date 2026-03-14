@@ -1,4 +1,17 @@
-@import "~@akwaba/graphene/src/index";
+@import "~@akwaba/graphene/src/scss/core/utils";
+@import "~@akwaba/graphene/src/scss/core/colors";
+@import "~@akwaba/graphene/src/scss/core/fonts";
+@import "~@akwaba/graphene/src/scss/core/grid";
+@import "~@akwaba/graphene/src/scss/core/media";
+@import "~@akwaba/graphene/src/scss/core/theme";
+@import "~@akwaba/graphene/src/scss/core/viewports";
+@import "~@akwaba/graphene/src/scss/core/typography";
+@import "~@akwaba/graphene/src/scss/base/reset";
+@import "~@akwaba/graphene/src/scss/base/grid";
+@import "~@akwaba/graphene/src/scss/base/viewports";
+@import "~@akwaba/graphene/src/scss/base/typography";
+@import "~@akwaba/graphene/src/scss/elements/button";
+
 @import "./mixins";
 @import "./variables";
 @import "./typography";

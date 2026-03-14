@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import PageTemplate from "../Shared/PageTemplate";
 
@@ -59,9 +60,14 @@ export default function AboutPage(props: any) {
                                 With curated styles and fast iteration, Kawaii AI turns ideas into visuals in seconds.
                             </p>
                             <div className="cta-container">
-                                <a href="/platform/kawaii" aria-label="Explore Kawaii AI" role="button" className="button button-elevated button-neutral">
-                                    Explore Kawaii AI
-                                </a>
+                                <NavLink
+                                    id="platform-explore-platform-kawaii"
+                                    to="/platform/kawaii"
+                                >
+                                    <button aria-label="Explore Kawaii AI" className="button button-elevated button-neutral">
+                                        Explore Kawaii AI
+                                    </button>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="chip-container">
@@ -73,9 +79,14 @@ export default function AboutPage(props: any) {
                                 Our goal is to build a learning platform where students don&apos;t just study information—they experience it.
                             </p>
                             <div className="cta-container">
-                                <a href="/platform/akwaba-virtual-school" aria-label="Explore Akwaba Virtual School" role="button" className="button button-elevated button-neutral">
-                                    Explore Akwaba Virtual School
-                                </a>
+                                <NavLink
+                                    id="platform-explore-platform-kawaii"
+                                    to="/platform/akwaba-virtual-school"
+                                >
+                                    <button aria-label="Explore Akwaba Virtual School" className="button button-elevated button-neutral">
+                                        Explore Akwaba Virtual School
+                                    </button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
