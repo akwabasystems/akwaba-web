@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require("path");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
@@ -8,6 +9,10 @@ const PORT = process.env.PORT || 9000;
 
 module.exports = merge(common, {
     mode: "development",
+
+    output: {
+        publicPath: "/"
+    },
 
     devtool: "eval-source-map",
 
@@ -52,5 +57,17 @@ module.exports = merge(common, {
         port: PORT,
 
     },
+
+    /** 
+     * Set the `basename` environment variable for the development build, which is used by React Router to determine the base URL for routing.
+     * This is important for ensuring that client-side routing works correctly in development, especially when the app is served from a subdirectory.
+     * 
+     * For instance, if you want to serve the app from `http://localhost:9000/akwaba-v5`, you would set `ROUTER_BASENAME=/akwaba-v5` in your development environment.
+     */
+    plugins: [
+        new webpack.DefinePlugin({
+            "process.env.ROUTER_BASENAME": JSON.stringify("/")
+        })
+    ]
 
 });
