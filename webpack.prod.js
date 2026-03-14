@@ -10,8 +10,9 @@ module.exports = merge(common, {
 
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.[contenthash].js",
-        publicPath: ""
+        filename: "js/[name].[contenthash].js",
+        chunkFilename: "js/[name].[contenthash].chunk.js",
+        publicPath: "/"
     },
 
     devtool: "source-map",
@@ -38,8 +39,25 @@ module.exports = merge(common, {
         ],
     },
 
+    optimization: {
+        splitChunks: {
+            chunks: "all",
+            cacheGroups: {
+                styles: {
+                    name: "styles",
+                    type: "css/mini-extract",
+                    chunks: "all",
+                    enforce: true
+                }
+            }
+        }
+    },
+
     plugins: [
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: "css/[name].[contenthash].css",
+            chunkFilename: "css/[name].[contenthash].chunk.css"
+        }),
 
         /** 
          * Set the `basename` environment variable for the production build, which is used by React Router to determine the base URL for routing.
@@ -47,9 +65,14 @@ module.exports = merge(common, {
          * such as `https://akwaba.systems/`.
          */
         new webpack.DefinePlugin({
-            "process.env.ROUTER_BASENAME": JSON.stringify("")
+            "process.env.ROUTER_BASENAME": JSON.stringify("/")
         })
-
     ],
+
+    performance: {
+        hints: "warning",
+        maxEntrypointSize: 300000,
+        maxAssetSize: 300000
+    }
 
 });

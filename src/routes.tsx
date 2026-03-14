@@ -1,23 +1,26 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import HomeComponent from "./components/Home/HomeComponent";
-import AboutComponent from "./components/About/AboutComponent";
-import ContactComponent from "./components/Contact/ContactComponent";
-import PlatformComponent from "./components/Platform/PlatformComponent";
-import NotFoundComponent from "./components/NotFound/NotFoundComponent";
+const HomeComponent = lazy(() => import("./components/Home/HomeComponent"));
+const AboutComponent = lazy(() => import("./components/About/AboutComponent"));
+const ContactComponent = lazy(() => import("./components/Contact/ContactComponent"));
+const PlatformComponent = lazy(() => import("./components/Platform/PlatformComponent"));
+const NotFoundComponent = lazy(() => import("./components/NotFound/NotFoundComponent"));
+
 
 export function AppRoutes() {
     return (
-        <Routes>
-            <Route path="/" element={<HomeComponent />} />
-            <Route path="/about" element={<AboutComponent />} />
-            <Route path="/contact" element={<ContactComponent />} />
+        <Suspense fallback={<div />}>
+            <Routes>
+                <Route path="/" element={<HomeComponent />} />
+                <Route path="/about" element={<AboutComponent />} />
+                <Route path="/contact" element={<ContactComponent />} />
 
-            {/* Single route declaration that still matches /platform/<tab> */}
-            <Route path="/platform/*" element={<PlatformComponent />} />
+                {/* Single route declaration that still matches /platform/<tab> */}
+                <Route path="/platform/*" element={<PlatformComponent />} />
 
-            <Route path="*" element={<NotFoundComponent />} />
-        </Routes>
+                <Route path="*" element={<NotFoundComponent />} />
+            </Routes>
+        </Suspense>
     );
 }
